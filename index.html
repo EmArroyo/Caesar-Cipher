@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caesar Cipher</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="/style.css"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div id="main-body" class="col text-center">
+          <h1>Caesar Cipher</h1>
+          <p>This tool allows you to encrypt or decrypt a text using one of the most widely known encryption techniques.
+            The 'Caesar Cipher', named after Julius Caesar who used it in his private correspondence is a type of substitution cypher,
+            where each character is replaced by another one located a fixed number of positions down the alphabet or character set used.
+          </p>
+        </div>
+      </div>
+      <div id="keyselect-area" class="row">
+        <h3 class="col-6 d-inline text-right">Select your key:</h3>
+        <select id="keyselect" name="keySelect" class="col-2 keyselect d-inline">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+          <option value="25">25</option>
+          <option value="26">26</option>
+        </select>
+      </div>
+      <div id="input-output" class="row">
+          <h3>Enter message:</h3>
+          <textarea
+            id="inputMessage"
+            class="textarea w-100"
+            placeholder="Enter your message here"
+            rows="10"
+          ></textarea>
+          <div class="buttons d-flex justify-content-center">
+            <button class="btn btn-lg button" onclick="encode()">Encode</button>
+            <button class="btn btn-lg button" onclick="decode()">Decode</button>
+          </div>
+          <h3>Output:</h3>
+          <textarea
+            id="outputMessage"
+            class="textarea w-100"
+            placeholder="Your encoded/decoded message will appear here"
+            rows="10"
+          ></textarea>
+        </div>
+    </div>
+  </body>
+</html>

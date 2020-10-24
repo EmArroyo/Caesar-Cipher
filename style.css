@@ -1,0 +1,49 @@
+@font-face {
+  font-family: Modeseven;
+  src: url(Modeseven.ttf);
+}
+
+body {
+  font-family: Modeseven;
+  color: green;
+  background-color: black;
+}
+
+.keyselect {
+  background-color: black;
+  color: white;
+}
+
+textarea {
+  background-color: black;
+  border-color: green;
+  color: white;
+  margin: 0.5rem;
+}
+
+.buttons {
+  width: 100%;
+}
+
+.button {
+  background-color: rgb(1, 110, 1);
+  border-color: rgb(1, 110, 1);
+  margin: 1rem;
+  color: white;
+}
+
+.button:hover {
+  background-color: green;
+  border-color: green;
+}
+
+.button:focus {
+  background-color: green;
+  border-color: green;
+  color: white;
+}
+
+.button:active {
+  background-color: green;
+  border-color: green;
+}
