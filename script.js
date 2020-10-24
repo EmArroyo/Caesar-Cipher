@@ -58,7 +58,7 @@ function calcNewEncodeIndex(character) {
   key = document.getElementById("keyselect").value;
   newIndex = characterToIndex(character) + Number(key);
   console.log(newIndex);
-  if (newIndex >= characterSet.length - 1){
+  if (newIndex > characterSet.length - 1){
     newIndex = newIndex - characterSet.length;
   } return newIndex;
 }
